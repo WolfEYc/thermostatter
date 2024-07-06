@@ -9,7 +9,21 @@ import SwiftUI
 
 struct LoginView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            ZStack {
+                RoundedRectangle(cornerRadius: 0)
+                    .foregroundStyle(Color.pink)
+                    .rotationEffect(Angle(degrees: 15))
+                    
+                VStack {
+                    Text("Thermostatter")
+                        .font(.system(size: 50))
+                        .foregroundStyle(Color.white)
+                        .bold()
+                }.padding(.top, 30)
+            }.frame(width: UIWindow.current.screen.bounds.width * 3, height: 300).offset(y: -100)
+            Spacer()
+        }
     }
 }
 
