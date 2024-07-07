@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		091D4FAA2C3A351D00FEF9DA /* AppleSignInComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091D4FA92C3A351D00FEF9DA /* AppleSignInComponent.swift */; };
+		091D4FAC2C3A482E00FEF9DA /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091D4FAB2C3A482E00FEF9DA /* extensions.swift */; };
 		095117A42C37732F001EFB3B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095117A32C37732F001EFB3B /* ProfileView.swift */; };
 		095117A62C3774AE001EFB3B /* DeviceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095117A52C3774AE001EFB3B /* DeviceListView.swift */; };
 		095117AA2C3774E8001EFB3B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095117A92C3774E8001EFB3B /* LoginView.swift */; };
@@ -14,7 +16,7 @@
 		095117AF2C377A9B001EFB3B /* DeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095117AE2C377A9B001EFB3B /* DeviceView.swift */; };
 		095117B12C377D5E001EFB3B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095117B02C377D5E001EFB3B /* User.swift */; };
 		095117B32C377D75001EFB3B /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095117B22C377D75001EFB3B /* Device.swift */; };
-		095117B62C377EA5001EFB3B /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095117B52C377EA5001EFB3B /* MainViewModel.swift */; };
+		095117B62C377EA5001EFB3B /* GlobalAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095117B52C377EA5001EFB3B /* GlobalAuth.swift */; };
 		095117B82C377EB4001EFB3B /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095117B72C377EB4001EFB3B /* ProfileViewModel.swift */; };
 		095117BA2C377ED3001EFB3B /* DeviceListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095117B92C377ED3001EFB3B /* DeviceListViewModel.swift */; };
 		095117BC2C377F64001EFB3B /* ScanNewDeviceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095117BB2C377F64001EFB3B /* ScanNewDeviceListView.swift */; };
@@ -39,6 +41,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		091D4FA72C3A21F000FEF9DA /* thermostatter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = thermostatter.entitlements; sourceTree = "<group>"; };
+		091D4FA82C3A247600FEF9DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		091D4FA92C3A351D00FEF9DA /* AppleSignInComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleSignInComponent.swift; sourceTree = "<group>"; };
+		091D4FAB2C3A482E00FEF9DA /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
 		095117A32C37732F001EFB3B /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		095117A52C3774AE001EFB3B /* DeviceListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceListView.swift; sourceTree = "<group>"; };
 		095117A92C3774E8001EFB3B /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -46,7 +52,7 @@
 		095117AE2C377A9B001EFB3B /* DeviceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceView.swift; sourceTree = "<group>"; };
 		095117B02C377D5E001EFB3B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		095117B22C377D75001EFB3B /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
-		095117B52C377EA5001EFB3B /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		095117B52C377EA5001EFB3B /* GlobalAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalAuth.swift; sourceTree = "<group>"; };
 		095117B72C377EB4001EFB3B /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		095117B92C377ED3001EFB3B /* DeviceListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceListViewModel.swift; sourceTree = "<group>"; };
 		095117BB2C377F64001EFB3B /* ScanNewDeviceListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanNewDeviceListView.swift; sourceTree = "<group>"; };
@@ -113,6 +119,7 @@
 			children = (
 				095117AC2C377A7B001EFB3B /* DeviceRowComponent.swift */,
 				095117CF2C379362001EFB3B /* ScanDeviceComponent.swift */,
+				091D4FA92C3A351D00FEF9DA /* AppleSignInComponent.swift */,
 			);
 			path = components;
 			sourceTree = "<group>";
@@ -120,7 +127,7 @@
 		095117B42C377E8A001EFB3B /* viewmodels */ = {
 			isa = PBXGroup;
 			children = (
-				095117B52C377EA5001EFB3B /* MainViewModel.swift */,
+				095117B52C377EA5001EFB3B /* GlobalAuth.swift */,
 				095117B72C377EB4001EFB3B /* ProfileViewModel.swift */,
 				095117B92C377ED3001EFB3B /* DeviceListViewModel.swift */,
 				095117C32C378FDE001EFB3B /* ConnectDeviceWifiViewModel.swift */,
@@ -155,6 +162,9 @@
 		09A5B8D52C371DE100AA1DFF /* thermostatter */ = {
 			isa = PBXGroup;
 			children = (
+				091D4FAB2C3A482E00FEF9DA /* extensions.swift */,
+				091D4FA82C3A247600FEF9DA /* Info.plist */,
+				091D4FA72C3A21F000FEF9DA /* thermostatter.entitlements */,
 				095117B42C377E8A001EFB3B /* viewmodels */,
 				095117AB2C377A4A001EFB3B /* components */,
 				09A5B8D62C371DE100AA1DFF /* thermostatterApp.swift */,
@@ -246,10 +256,12 @@
 			files = (
 				095117D42C3793B3001EFB3B /* ScanDeviceComponentModel.swift in Sources */,
 				095117D22C37938B001EFB3B /* DeviceRowComponentModel.swift in Sources */,
+				091D4FAA2C3A351D00FEF9DA /* AppleSignInComponent.swift in Sources */,
 				095117C42C378FDE001EFB3B /* ConnectDeviceWifiViewModel.swift in Sources */,
 				095117C62C379005001EFB3B /* DeviceViewModel.swift in Sources */,
 				095117C82C379047001EFB3B /* ScanNewDeviceListViewModel.swift in Sources */,
 				095117A42C37732F001EFB3B /* ProfileView.swift in Sources */,
+				091D4FAC2C3A482E00FEF9DA /* extensions.swift in Sources */,
 				095117AA2C3774E8001EFB3B /* LoginView.swift in Sources */,
 				095117C22C378FC9001EFB3B /* ConnectDeviceWifiView.swift in Sources */,
 				095117AF2C377A9B001EFB3B /* DeviceView.swift in Sources */,
@@ -269,7 +281,7 @@
 				09A5B8D72C371DE100AA1DFF /* thermostatterApp.swift in Sources */,
 				095117B32C377D75001EFB3B /* Device.swift in Sources */,
 				095117CA2C37905D001EFB3B /* LoginViewModel.swift in Sources */,
-				095117B62C377EA5001EFB3B /* MainViewModel.swift in Sources */,
+				095117B62C377EA5001EFB3B /* GlobalAuth.swift in Sources */,
 				095117DC2C379491001EFB3B /* AboutViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,14 +413,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = thermostatter/thermostatter.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"thermostatter/Preview Content\"";
 				DEVELOPMENT_TEAM = 6BC6H674Y3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = thermostatter/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Thermostatter;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "To connect to thermostat";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -431,14 +446,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = thermostatter/thermostatter.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"thermostatter/Preview Content\"";
 				DEVELOPMENT_TEAM = 6BC6H674Y3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = thermostatter/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Thermostatter;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "To connect to thermostat";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

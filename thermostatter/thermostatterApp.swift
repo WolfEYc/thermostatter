@@ -22,6 +22,7 @@ struct thermostatterApp: App {
         }
     }()
     
+    
     init() {
         print("hello world!")
     }

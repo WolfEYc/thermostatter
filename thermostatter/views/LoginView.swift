@@ -7,23 +7,26 @@
 
 import SwiftUI
 
+
 struct LoginView: View {
+    @Environment(\.colorScheme) var colorScheme
+
     var body: some View {
-        VStack {
-            ZStack {
-                RoundedRectangle(cornerRadius: 0)
-                    .foregroundStyle(Color.pink)
-                    .rotationEffect(Angle(degrees: 15))
-                    
-                VStack {
-                    Text("Thermostatter")
-                        .font(.system(size: 50))
-                        .foregroundStyle(Color.white)
-                        .bold()
-                }.padding(.top, 30)
-            }.frame(width: UIWindow.current.screen.bounds.width * 3, height: 300).offset(y: -100)
-            Spacer()
+        ZStack {
+            if colorScheme == .dark {
+                Color( red: 0.15, green: 0.15, blue: 0.15)
+            } else {
+                Color(.white)
+            }
+            
+            VStack{
+                Text("Thermostatter\n wants you to log in").multilineTextAlignment(.center).bold().font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                AppleSignInComponent().padding()
+
+                
+            }
         }
+        .ignoresSafeArea()
     }
 }
 
