@@ -9,13 +9,14 @@ import SwiftUI
 import SwiftData
 
 struct MainView: View {
-    @StateObject var global_auth = GlobalAuth.shared;
+    @StateObject var global_auth = GlobalAuth.shared
     
     var body: some View {
-        if global_auth.current_user_id == .none {
+        switch global_auth.user {
+        case nil:
             LoginView()
-        } else {
-            DeviceListView()
+        case .some(let user):
+            DeviceListView().environment(\.user, user)
         }
     }
 }

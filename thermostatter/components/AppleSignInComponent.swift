@@ -21,11 +21,11 @@ struct AppleSignInComponent: View {
             // completion handler that is called when the sign-in completes
             switch result {
             case .failure(let error):
-                global_auth.handle_login_failure(with: error)
+                apple_handle_login_failure(with: error)
             case .success(let auth):
-                global_auth.handle_login_success(with: auth)
+                apple_handle_login_success(with: auth)
             }
-            showing_alert = global_auth.current_user_id == .none
+            showing_alert = global_auth.user == nil
         }
         .frame(height: 60)
         .alert("Apple Sign in Failed", isPresented: $showing_alert) {

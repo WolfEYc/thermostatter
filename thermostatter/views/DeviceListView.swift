@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct DeviceListView: View {
-    @StateObject var global_auth = GlobalAuth.shared;
+    @Environment(\.user) var user: User;
 
     var body: some View {
         NavigationView {
-            Text(global_auth.current_user_id ?? "shitballs")
+            Text("meme")
         }
     }
 }
