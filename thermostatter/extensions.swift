@@ -26,3 +26,13 @@ extension UIScreen {
         UIWindow.current.screen
     }
 }
+
+protocol TryFrom {
+    associatedtype FromType
+    static func try_from(_: FromType) -> Self?
+}
+
+protocol From {
+    associatedtype FromType
+    static func from (_: FromType) -> Self
+}

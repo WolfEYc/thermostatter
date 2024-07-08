@@ -12,7 +12,12 @@ struct DeviceListView: View {
 
     var body: some View {
         NavigationView {
-            Text("meme")
+            VStack{
+                Text(user.id)
+                Text(user.email)
+                Text(user.first_name ?? "UNKNOWN")
+                Text(user.last_name ?? "UNKNOWN")
+            }
         }
     }
 }

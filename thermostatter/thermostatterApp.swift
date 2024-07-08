@@ -25,9 +25,6 @@ struct thermostatterApp: App {
     
     init() {
         print("app startup")
-        Task {
-            GlobalAuth.shared.user = await get_credential_state()
-        }
     }
 
     var body: some Scene {
