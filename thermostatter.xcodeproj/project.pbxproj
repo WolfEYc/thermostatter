@@ -39,6 +39,7 @@
 		09A5B8DD2C371DE200AA1DFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09A5B8DC2C371DE200AA1DFF /* Assets.xcassets */; };
 		09A5B8E02C371DE200AA1DFF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09A5B8DF2C371DE200AA1DFF /* Preview Assets.xcassets */; };
 		09BC3D6A2C3AF762008624FB /* GlobalAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BC3D692C3AF762008624FB /* GlobalAuth.swift */; };
+		09D5E6B02C3C45120094D4EA /* APIConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D5E6AF2C3C45120094D4EA /* APIConnection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +78,7 @@
 		09A5B8DC2C371DE200AA1DFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09A5B8DF2C371DE200AA1DFF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		09BC3D692C3AF762008624FB /* GlobalAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalAuth.swift; sourceTree = "<group>"; };
+		09D5E6AF2C3C45120094D4EA /* APIConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConnection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,7 +132,6 @@
 		095117B42C377E8A001EFB3B /* viewmodels */ = {
 			isa = PBXGroup;
 			children = (
-				095117B52C377EA5001EFB3B /* AppleAuth.swift */,
 				095117B72C377EB4001EFB3B /* ProfileViewModel.swift */,
 				095117B92C377ED3001EFB3B /* DeviceListViewModel.swift */,
 				095117C32C378FDE001EFB3B /* ConnectDeviceWifiViewModel.swift */,
@@ -165,6 +166,7 @@
 		09A5B8D52C371DE100AA1DFF /* thermostatter */ = {
 			isa = PBXGroup;
 			children = (
+				09D5E6AE2C3C44E10094D4EA /* api */,
 				091D4FAB2C3A482E00FEF9DA /* extensions.swift */,
 				091D4FA82C3A247600FEF9DA /* Info.plist */,
 				091D4FA72C3A21F000FEF9DA /* thermostatter.entitlements */,
@@ -185,6 +187,15 @@
 				09A5B8DF2C371DE200AA1DFF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		09D5E6AE2C3C44E10094D4EA /* api */ = {
+			isa = PBXGroup;
+			children = (
+				095117B52C377EA5001EFB3B /* AppleAuth.swift */,
+				09D5E6AF2C3C45120094D4EA /* APIConnection.swift */,
+			);
+			path = api;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,6 +291,7 @@
 				095117AD2C377A7B001EFB3B /* DeviceRowComponent.swift in Sources */,
 				095117D82C379474001EFB3B /* AboutView.swift in Sources */,
 				095117BA2C377ED3001EFB3B /* DeviceListViewModel.swift in Sources */,
+				09D5E6B02C3C45120094D4EA /* APIConnection.swift in Sources */,
 				095117DA2C379487001EFB3B /* SettingsViewModel.swift in Sources */,
 				09A5B8D72C371DE100AA1DFF /* thermostatterApp.swift in Sources */,
 				095117B32C377D75001EFB3B /* Device.swift in Sources */,

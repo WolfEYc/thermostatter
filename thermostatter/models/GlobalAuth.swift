@@ -20,7 +20,7 @@ import Foundation
     
     func set_user(user: User?) {
         self.user = user;
-        user?.persist()
+        user?.save_to_disk()
     }
     
     static let shared = GlobalAuth()

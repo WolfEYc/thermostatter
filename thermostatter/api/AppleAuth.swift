@@ -9,19 +9,19 @@ import Foundation
 import AuthenticationServices
 
 
-@MainActor func apple_handle_login_success(with authorization: ASAuthorization) {
+func apple_handle_login_success(with authorization: ASAuthorization) async -> Optional<User> {
     guard let creds = authorization.credential as? ASAuthorizationAppleIDCredential else {
-        GlobalAuth.shared.set_user(user: nil)
-        return
+        return nil
     }
     
     let user = User.try_from(creds)
     if user != nil {
-        GlobalAuth.shared.set_user(user: user)
-        return
+        
+        return user
     }
-    let fetched_user = User.load_from_api(id: creds.user)
-    GlobalAuth.shared.set_user(user: fetched_user)
+    
+    let fetched_user = await User.load_from_api(id: creds.user)
+    return fetched_user
 }
 
 @MainActor func apple_handle_login_failure(with error: Error) {
@@ -30,7 +30,7 @@ import AuthenticationServices
 
 func get_credential_state() async -> Optional<User> {
     let appleIDProvider = ASAuthorizationAppleIDProvider()
-    guard let user = User.load_from_persisted() else {
+    guard let user = User.load_from_disk() else {
         return nil
     }
 

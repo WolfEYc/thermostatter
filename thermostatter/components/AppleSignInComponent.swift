@@ -22,10 +22,14 @@ struct AppleSignInComponent: View {
             switch result {
             case .failure(let error):
                 apple_handle_login_failure(with: error)
+                showing_alert = true
             case .success(let auth):
-                apple_handle_login_success(with: auth)
+                Task {
+                    let user = await apple_handle_login_success(with: auth)
+                    GlobalAuth.shared.set_user(user: user)
+                    showing_alert = user == nil
+                }
             }
-            showing_alert = global_auth.user == nil
         }
         .frame(height: 60)
         .alert("Apple Sign in Failed", isPresented: $showing_alert) {

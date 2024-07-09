@@ -17,14 +17,14 @@ struct User: Codable {
     let last_name: String?
     private static let saved_user_key = "appleAuthorizedUserKey"
     
-    func persist() {
+    func save_to_disk() {
          guard let data = try? PropertyListEncoder().encode(self) else {
              return
          }
         UserDefaults.standard.set(data, forKey: User.saved_user_key)
     }
     
-    static func load_from_persisted() -> Optional<User> {
+    static func load_from_disk() -> Optional<User> {
         guard let persisted = UserDefaults.standard.value(forKey: User.saved_user_key) as? Data else {
             return nil
         }
@@ -32,7 +32,11 @@ struct User: Codable {
         return try? PropertyListDecoder().decode(User.self, from: persisted)
     }
     
-    static func load_from_api(id: String) -> Optional<User> {
+    func save_to_api() async {
+        
+    }
+    
+    static func load_from_api(id: String) async -> Optional<User> {
         return User(id: id, email: "joe@mama.com", first_name: "joe", last_name: "mama")
     }
 }
