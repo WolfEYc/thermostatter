@@ -12,10 +12,10 @@ import Foundation
     
     private init () {
         user = nil
-        Task {
-            let user = await get_credential_state()
-            self.set_user(user: user)
-        }
+//        Task {
+//            let user = await get_credential_state()
+//            self.set_user(user: user)
+//        }
     }
     
     func set_user(user: User?) {

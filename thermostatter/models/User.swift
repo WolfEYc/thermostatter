@@ -15,6 +15,8 @@ struct User: Codable {
     let email: String
     let first_name: String?
     let last_name: String?
+    
+    
     private static let saved_user_key = "appleAuthorizedUserKey"
     
     func save_to_disk() {
@@ -36,7 +38,7 @@ struct User: Codable {
         
     }
     
-    static func load_from_api(id: String) async -> Optional<User> {
+    static func load_from_api(id: String, authorization_code: String) async -> Optional<User> {
         return User(id: id, email: "joe@mama.com", first_name: "joe", last_name: "mama")
     }
 }

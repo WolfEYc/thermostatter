@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		091D4FAA2C3A351D00FEF9DA /* AppleSignInComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091D4FA92C3A351D00FEF9DA /* AppleSignInComponent.swift */; };
 		091D4FAC2C3A482E00FEF9DA /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091D4FAB2C3A482E00FEF9DA /* extensions.swift */; };
 		095117A42C37732F001EFB3B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095117A32C37732F001EFB3B /* ProfileView.swift */; };
 		095117A62C3774AE001EFB3B /* DeviceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095117A52C3774AE001EFB3B /* DeviceListView.swift */; };
@@ -16,7 +15,6 @@
 		095117AF2C377A9B001EFB3B /* DeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095117AE2C377A9B001EFB3B /* DeviceView.swift */; };
 		095117B12C377D5E001EFB3B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095117B02C377D5E001EFB3B /* User.swift */; };
 		095117B32C377D75001EFB3B /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095117B22C377D75001EFB3B /* Device.swift */; };
-		095117B62C377EA5001EFB3B /* AppleAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095117B52C377EA5001EFB3B /* AppleAuth.swift */; };
 		095117B82C377EB4001EFB3B /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095117B72C377EB4001EFB3B /* ProfileViewModel.swift */; };
 		095117BA2C377ED3001EFB3B /* DeviceListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095117B92C377ED3001EFB3B /* DeviceListViewModel.swift */; };
 		095117BC2C377F64001EFB3B /* ScanNewDeviceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095117BB2C377F64001EFB3B /* ScanNewDeviceListView.swift */; };
@@ -39,13 +37,15 @@
 		09A5B8DD2C371DE200AA1DFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09A5B8DC2C371DE200AA1DFF /* Assets.xcassets */; };
 		09A5B8E02C371DE200AA1DFF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09A5B8DF2C371DE200AA1DFF /* Preview Assets.xcassets */; };
 		09BC3D6A2C3AF762008624FB /* GlobalAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BC3D692C3AF762008624FB /* GlobalAuth.swift */; };
-		09D5E6B02C3C45120094D4EA /* APIConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D5E6AF2C3C45120094D4EA /* APIConnection.swift */; };
+		09C16FA42C4343F0009D5C27 /* HelloWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C16FA32C4343F0009D5C27 /* HelloWorld.swift */; };
+		09C16FA62C442191009D5C27 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C16FA52C442191009D5C27 /* Auth.swift */; };
+		09C16FA82C4421A0009D5C27 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C16FA72C4421A0009D5C27 /* KeychainService.swift */; };
+		09D5E6B02C3C45120094D4EA /* Host.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D5E6AF2C3C45120094D4EA /* Host.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		091D4FA72C3A21F000FEF9DA /* thermostatter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = thermostatter.entitlements; sourceTree = "<group>"; };
 		091D4FA82C3A247600FEF9DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		091D4FA92C3A351D00FEF9DA /* AppleSignInComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleSignInComponent.swift; sourceTree = "<group>"; };
 		091D4FAB2C3A482E00FEF9DA /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
 		095117A32C37732F001EFB3B /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		095117A52C3774AE001EFB3B /* DeviceListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceListView.swift; sourceTree = "<group>"; };
@@ -54,7 +54,6 @@
 		095117AE2C377A9B001EFB3B /* DeviceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceView.swift; sourceTree = "<group>"; };
 		095117B02C377D5E001EFB3B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		095117B22C377D75001EFB3B /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
-		095117B52C377EA5001EFB3B /* AppleAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAuth.swift; sourceTree = "<group>"; };
 		095117B72C377EB4001EFB3B /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		095117B92C377ED3001EFB3B /* DeviceListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceListViewModel.swift; sourceTree = "<group>"; };
 		095117BB2C377F64001EFB3B /* ScanNewDeviceListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanNewDeviceListView.swift; sourceTree = "<group>"; };
@@ -78,7 +77,10 @@
 		09A5B8DC2C371DE200AA1DFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09A5B8DF2C371DE200AA1DFF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		09BC3D692C3AF762008624FB /* GlobalAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalAuth.swift; sourceTree = "<group>"; };
-		09D5E6AF2C3C45120094D4EA /* APIConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConnection.swift; sourceTree = "<group>"; };
+		09C16FA32C4343F0009D5C27 /* HelloWorld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorld.swift; sourceTree = "<group>"; };
+		09C16FA52C442191009D5C27 /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
+		09C16FA72C4421A0009D5C27 /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
+		09D5E6AF2C3C45120094D4EA /* Host.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Host.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,7 +126,6 @@
 			children = (
 				095117AC2C377A7B001EFB3B /* DeviceRowComponent.swift */,
 				095117CF2C379362001EFB3B /* ScanDeviceComponent.swift */,
-				091D4FA92C3A351D00FEF9DA /* AppleSignInComponent.swift */,
 			);
 			path = components;
 			sourceTree = "<group>";
@@ -192,8 +193,10 @@
 		09D5E6AE2C3C44E10094D4EA /* api */ = {
 			isa = PBXGroup;
 			children = (
-				095117B52C377EA5001EFB3B /* AppleAuth.swift */,
-				09D5E6AF2C3C45120094D4EA /* APIConnection.swift */,
+				09D5E6AF2C3C45120094D4EA /* Host.swift */,
+				09C16FA32C4343F0009D5C27 /* HelloWorld.swift */,
+				09C16FA52C442191009D5C27 /* Auth.swift */,
+				09C16FA72C4421A0009D5C27 /* KeychainService.swift */,
 			);
 			path = api;
 			sourceTree = "<group>";
@@ -270,8 +273,8 @@
 			files = (
 				095117D42C3793B3001EFB3B /* ScanDeviceComponentModel.swift in Sources */,
 				095117D22C37938B001EFB3B /* DeviceRowComponentModel.swift in Sources */,
-				091D4FAA2C3A351D00FEF9DA /* AppleSignInComponent.swift in Sources */,
 				095117C42C378FDE001EFB3B /* ConnectDeviceWifiViewModel.swift in Sources */,
+				09C16FA42C4343F0009D5C27 /* HelloWorld.swift in Sources */,
 				095117C62C379005001EFB3B /* DeviceViewModel.swift in Sources */,
 				095117C82C379047001EFB3B /* ScanNewDeviceListViewModel.swift in Sources */,
 				095117A42C37732F001EFB3B /* ProfileView.swift in Sources */,
@@ -281,6 +284,7 @@
 				095117AF2C377A9B001EFB3B /* DeviceView.swift in Sources */,
 				095117D62C37945D001EFB3B /* SettingsView.swift in Sources */,
 				095117D02C379362001EFB3B /* ScanDeviceComponent.swift in Sources */,
+				09C16FA82C4421A0009D5C27 /* KeychainService.swift in Sources */,
 				09A5B8D92C371DE100AA1DFF /* MainView.swift in Sources */,
 				095117B12C377D5E001EFB3B /* User.swift in Sources */,
 				095117B82C377EB4001EFB3B /* ProfileViewModel.swift in Sources */,
@@ -291,12 +295,12 @@
 				095117AD2C377A7B001EFB3B /* DeviceRowComponent.swift in Sources */,
 				095117D82C379474001EFB3B /* AboutView.swift in Sources */,
 				095117BA2C377ED3001EFB3B /* DeviceListViewModel.swift in Sources */,
-				09D5E6B02C3C45120094D4EA /* APIConnection.swift in Sources */,
+				09D5E6B02C3C45120094D4EA /* Host.swift in Sources */,
 				095117DA2C379487001EFB3B /* SettingsViewModel.swift in Sources */,
 				09A5B8D72C371DE100AA1DFF /* thermostatterApp.swift in Sources */,
 				095117B32C377D75001EFB3B /* Device.swift in Sources */,
 				095117CA2C37905D001EFB3B /* LoginViewModel.swift in Sources */,
-				095117B62C377EA5001EFB3B /* AppleAuth.swift in Sources */,
+				09C16FA62C442191009D5C27 /* Auth.swift in Sources */,
 				09BC3D6A2C3AF762008624FB /* GlobalAuth.swift in Sources */,
 				095117DC2C379491001EFB3B /* AboutViewModel.swift in Sources */,
 			);

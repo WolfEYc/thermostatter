@@ -9,24 +9,21 @@ import SwiftUI
 
 
 struct LoginView: View {
-    @Environment(\.colorScheme) var colorScheme
-
+    @State var res_str: String = "Loading..."
+    let username = "test"
+    let password = "test"
+    
     var body: some View {
-        ZStack {
-            if colorScheme == .dark {
-                Color( red: 0.15, green: 0.15, blue: 0.15)
-            } else {
-                Color(.white)
-            }
-            
-            VStack{
-                Text("Thermostatter\n wants you to log in").multilineTextAlignment(.center).bold().font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-                AppleSignInComponent().padding()
-
-                
+        VStack {
+            Text(res_str)
+        }.task {
+            do {
+                let res = try await authenticate(username: username, password: password)
+                res_str = res.access_token
+            } catch  {
+                res_str = "\(error)"
             }
         }
-        .ignoresSafeArea()
     }
 }
 
