@@ -80,8 +80,8 @@ struct RegisterView: View {
                     }
                 
                 Section("REQUIREMENTS") {
-                    RequirementLabel(text: "Username must be between 2-30 characters", checked: is_username_valid)
                     RequirementLabel(text: "Email must be in valid format", checked: is_email_valid)
+                    RequirementLabel(text: "Username must be between 2-30 characters", checked: is_username_valid)
                     RequirementLabel(text: "Password must be between 8-16 characters", checked: is_password_valid)
                 }
                 
