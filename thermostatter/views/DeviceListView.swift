@@ -13,10 +13,8 @@ struct DeviceListView: View {
     var body: some View {
         NavigationView {
             VStack{
-                Text(user.id)
-                Text(user.email)
-                Text(user.first_name ?? "UNKNOWN")
-                Text(user.last_name ?? "UNKNOWN")
+                Text(user.username)
+                Text(user.access_token)
             }
         }
     }

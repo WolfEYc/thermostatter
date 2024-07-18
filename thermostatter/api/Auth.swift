@@ -43,3 +43,6 @@ func authenticate(username: String, password: String) async throws -> Authentica
     return data_decoded
 }
 
+func register(email: String, username: String, password: String) async throws -> AuthenticateRes {
+    return AuthenticateRes(access_token: "bean", token_type: "bearer")
+}

@@ -11,41 +11,24 @@ import SwiftUI
 
 
 struct User: Codable {
-    let id: String
-    let email: String
-    let first_name: String?
-    let last_name: String?
-    
-    
-    private static let saved_user_key = "appleAuthorizedUserKey"
-    
-    func save_to_disk() {
-         guard let data = try? PropertyListEncoder().encode(self) else {
-             return
-         }
-        UserDefaults.standard.set(data, forKey: User.saved_user_key)
-    }
-    
-    static func load_from_disk() -> Optional<User> {
-        guard let persisted = UserDefaults.standard.value(forKey: User.saved_user_key) as? Data else {
-            return nil
-        }
-        
-        return try? PropertyListDecoder().decode(User.self, from: persisted)
-    }
-    
-    func save_to_api() async {
-        
-    }
-    
-    static func load_from_api(id: String, authorization_code: String) async -> Optional<User> {
-        return User(id: id, email: "joe@mama.com", first_name: "joe", last_name: "mama")
-    }
+    let username: String
+    let access_token: String
 }
 
-
 struct UserKey: EnvironmentKey {
-    static let defaultValue = User(id: "69420", email: "joe@mama.com", first_name: "joe", last_name: "mama")
+    static let defaultValue = User(username: "example_user_name", access_token: "fake_token")
+}
+
+extension User {
+    static func from_keychain() async -> User? {
+        guard let creds = keychain_load() else {
+            return nil
+        }
+        guard let auth_res = try? await authenticate(username: creds.username, password: creds.password) else {
+            return nil
+        }
+        return User(username: creds.username, access_token: auth_res.access_token)
+    }
 }
 
 extension EnvironmentValues {

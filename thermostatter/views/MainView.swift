@@ -9,16 +9,21 @@ import SwiftUI
 import SwiftData
 
 struct MainView: View {
-    @StateObject var global_auth = GlobalAuth.shared
+    @State var user: User?
     
     var body: some View {
-        switch global_auth.user {
-        case nil:
-            LoginView()
-        case .some(let user):
-            DeviceListView().environment(\.user, user)
+        Group {
+            switch user {
+            case nil:
+                LoginView(user: $user)
+            case .some(let user):
+                DeviceListView().environment(\.user, user)
+            }
+        }.task {
+            user = await User.from_keychain()
         }
     }
+    
 }
 
 

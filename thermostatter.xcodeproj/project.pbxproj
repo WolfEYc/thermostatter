@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09085C472C48A0C900A80D41 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09085C462C48A0C900A80D41 /* RegisterView.swift */; };
 		091D4FAC2C3A482E00FEF9DA /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091D4FAB2C3A482E00FEF9DA /* extensions.swift */; };
 		095117A42C37732F001EFB3B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095117A32C37732F001EFB3B /* ProfileView.swift */; };
 		095117A62C3774AE001EFB3B /* DeviceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095117A52C3774AE001EFB3B /* DeviceListView.swift */; };
@@ -15,28 +16,16 @@
 		095117AF2C377A9B001EFB3B /* DeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095117AE2C377A9B001EFB3B /* DeviceView.swift */; };
 		095117B12C377D5E001EFB3B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095117B02C377D5E001EFB3B /* User.swift */; };
 		095117B32C377D75001EFB3B /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095117B22C377D75001EFB3B /* Device.swift */; };
-		095117B82C377EB4001EFB3B /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095117B72C377EB4001EFB3B /* ProfileViewModel.swift */; };
-		095117BA2C377ED3001EFB3B /* DeviceListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095117B92C377ED3001EFB3B /* DeviceListViewModel.swift */; };
 		095117BC2C377F64001EFB3B /* ScanNewDeviceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095117BB2C377F64001EFB3B /* ScanNewDeviceListView.swift */; };
 		095117BE2C378390001EFB3B /* NameNewDeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095117BD2C378390001EFB3B /* NameNewDeviceView.swift */; };
 		095117C22C378FC9001EFB3B /* ConnectDeviceWifiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095117C12C378FC9001EFB3B /* ConnectDeviceWifiView.swift */; };
-		095117C42C378FDE001EFB3B /* ConnectDeviceWifiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095117C32C378FDE001EFB3B /* ConnectDeviceWifiViewModel.swift */; };
-		095117C62C379005001EFB3B /* DeviceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095117C52C379005001EFB3B /* DeviceViewModel.swift */; };
-		095117C82C379047001EFB3B /* ScanNewDeviceListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095117C72C379047001EFB3B /* ScanNewDeviceListViewModel.swift */; };
-		095117CA2C37905D001EFB3B /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095117C92C37905D001EFB3B /* LoginViewModel.swift */; };
-		095117CC2C37908D001EFB3B /* NameNewDeviceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095117CB2C37908D001EFB3B /* NameNewDeviceViewModel.swift */; };
 		095117D02C379362001EFB3B /* ScanDeviceComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095117CF2C379362001EFB3B /* ScanDeviceComponent.swift */; };
-		095117D22C37938B001EFB3B /* DeviceRowComponentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095117D12C37938B001EFB3B /* DeviceRowComponentModel.swift */; };
-		095117D42C3793B3001EFB3B /* ScanDeviceComponentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095117D32C3793B3001EFB3B /* ScanDeviceComponentModel.swift */; };
 		095117D62C37945D001EFB3B /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095117D52C37945D001EFB3B /* SettingsView.swift */; };
 		095117D82C379474001EFB3B /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095117D72C379474001EFB3B /* AboutView.swift */; };
-		095117DA2C379487001EFB3B /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095117D92C379487001EFB3B /* SettingsViewModel.swift */; };
-		095117DC2C379491001EFB3B /* AboutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095117DB2C379491001EFB3B /* AboutViewModel.swift */; };
 		09A5B8D72C371DE100AA1DFF /* thermostatterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A5B8D62C371DE100AA1DFF /* thermostatterApp.swift */; };
 		09A5B8D92C371DE100AA1DFF /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A5B8D82C371DE100AA1DFF /* MainView.swift */; };
 		09A5B8DD2C371DE200AA1DFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09A5B8DC2C371DE200AA1DFF /* Assets.xcassets */; };
 		09A5B8E02C371DE200AA1DFF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09A5B8DF2C371DE200AA1DFF /* Preview Assets.xcassets */; };
-		09BC3D6A2C3AF762008624FB /* GlobalAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BC3D692C3AF762008624FB /* GlobalAuth.swift */; };
 		09C16FA42C4343F0009D5C27 /* HelloWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C16FA32C4343F0009D5C27 /* HelloWorld.swift */; };
 		09C16FA62C442191009D5C27 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C16FA52C442191009D5C27 /* Auth.swift */; };
 		09C16FA82C4421A0009D5C27 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C16FA72C4421A0009D5C27 /* KeychainService.swift */; };
@@ -44,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09085C462C48A0C900A80D41 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		091D4FA72C3A21F000FEF9DA /* thermostatter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = thermostatter.entitlements; sourceTree = "<group>"; };
 		091D4FA82C3A247600FEF9DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		091D4FAB2C3A482E00FEF9DA /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
@@ -54,29 +44,17 @@
 		095117AE2C377A9B001EFB3B /* DeviceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceView.swift; sourceTree = "<group>"; };
 		095117B02C377D5E001EFB3B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		095117B22C377D75001EFB3B /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
-		095117B72C377EB4001EFB3B /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
-		095117B92C377ED3001EFB3B /* DeviceListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceListViewModel.swift; sourceTree = "<group>"; };
 		095117BB2C377F64001EFB3B /* ScanNewDeviceListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanNewDeviceListView.swift; sourceTree = "<group>"; };
 		095117BD2C378390001EFB3B /* NameNewDeviceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameNewDeviceView.swift; sourceTree = "<group>"; };
 		095117C12C378FC9001EFB3B /* ConnectDeviceWifiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectDeviceWifiView.swift; sourceTree = "<group>"; };
-		095117C32C378FDE001EFB3B /* ConnectDeviceWifiViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectDeviceWifiViewModel.swift; sourceTree = "<group>"; };
-		095117C52C379005001EFB3B /* DeviceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceViewModel.swift; sourceTree = "<group>"; };
-		095117C72C379047001EFB3B /* ScanNewDeviceListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanNewDeviceListViewModel.swift; sourceTree = "<group>"; };
-		095117C92C37905D001EFB3B /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
-		095117CB2C37908D001EFB3B /* NameNewDeviceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameNewDeviceViewModel.swift; sourceTree = "<group>"; };
 		095117CF2C379362001EFB3B /* ScanDeviceComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanDeviceComponent.swift; sourceTree = "<group>"; };
-		095117D12C37938B001EFB3B /* DeviceRowComponentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceRowComponentModel.swift; sourceTree = "<group>"; };
-		095117D32C3793B3001EFB3B /* ScanDeviceComponentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanDeviceComponentModel.swift; sourceTree = "<group>"; };
 		095117D52C37945D001EFB3B /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		095117D72C379474001EFB3B /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
-		095117D92C379487001EFB3B /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
-		095117DB2C379491001EFB3B /* AboutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewModel.swift; sourceTree = "<group>"; };
 		09A5B8D32C371DE100AA1DFF /* thermostatter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = thermostatter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09A5B8D62C371DE100AA1DFF /* thermostatterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thermostatterApp.swift; sourceTree = "<group>"; };
 		09A5B8D82C371DE100AA1DFF /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		09A5B8DC2C371DE200AA1DFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09A5B8DF2C371DE200AA1DFF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		09BC3D692C3AF762008624FB /* GlobalAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalAuth.swift; sourceTree = "<group>"; };
 		09C16FA32C4343F0009D5C27 /* HelloWorld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorld.swift; sourceTree = "<group>"; };
 		09C16FA52C442191009D5C27 /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
 		09C16FA72C4421A0009D5C27 /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
@@ -107,6 +85,7 @@
 				095117C12C378FC9001EFB3B /* ConnectDeviceWifiView.swift */,
 				095117D52C37945D001EFB3B /* SettingsView.swift */,
 				095117D72C379474001EFB3B /* AboutView.swift */,
+				09085C462C48A0C900A80D41 /* RegisterView.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -116,7 +95,6 @@
 			children = (
 				095117B02C377D5E001EFB3B /* User.swift */,
 				095117B22C377D75001EFB3B /* Device.swift */,
-				09BC3D692C3AF762008624FB /* GlobalAuth.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -128,24 +106,6 @@
 				095117CF2C379362001EFB3B /* ScanDeviceComponent.swift */,
 			);
 			path = components;
-			sourceTree = "<group>";
-		};
-		095117B42C377E8A001EFB3B /* viewmodels */ = {
-			isa = PBXGroup;
-			children = (
-				095117B72C377EB4001EFB3B /* ProfileViewModel.swift */,
-				095117B92C377ED3001EFB3B /* DeviceListViewModel.swift */,
-				095117C32C378FDE001EFB3B /* ConnectDeviceWifiViewModel.swift */,
-				095117C52C379005001EFB3B /* DeviceViewModel.swift */,
-				095117C72C379047001EFB3B /* ScanNewDeviceListViewModel.swift */,
-				095117C92C37905D001EFB3B /* LoginViewModel.swift */,
-				095117CB2C37908D001EFB3B /* NameNewDeviceViewModel.swift */,
-				095117D12C37938B001EFB3B /* DeviceRowComponentModel.swift */,
-				095117D32C3793B3001EFB3B /* ScanDeviceComponentModel.swift */,
-				095117D92C379487001EFB3B /* SettingsViewModel.swift */,
-				095117DB2C379491001EFB3B /* AboutViewModel.swift */,
-			);
-			path = viewmodels;
 			sourceTree = "<group>";
 		};
 		09A5B8CA2C371DE100AA1DFF = {
@@ -171,7 +131,6 @@
 				091D4FAB2C3A482E00FEF9DA /* extensions.swift */,
 				091D4FA82C3A247600FEF9DA /* Info.plist */,
 				091D4FA72C3A21F000FEF9DA /* thermostatter.entitlements */,
-				095117B42C377E8A001EFB3B /* viewmodels */,
 				095117AB2C377A4A001EFB3B /* components */,
 				09A5B8D62C371DE100AA1DFF /* thermostatterApp.swift */,
 				095117A12C3772C5001EFB3B /* views */,
@@ -271,12 +230,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				095117D42C3793B3001EFB3B /* ScanDeviceComponentModel.swift in Sources */,
-				095117D22C37938B001EFB3B /* DeviceRowComponentModel.swift in Sources */,
-				095117C42C378FDE001EFB3B /* ConnectDeviceWifiViewModel.swift in Sources */,
 				09C16FA42C4343F0009D5C27 /* HelloWorld.swift in Sources */,
-				095117C62C379005001EFB3B /* DeviceViewModel.swift in Sources */,
-				095117C82C379047001EFB3B /* ScanNewDeviceListViewModel.swift in Sources */,
 				095117A42C37732F001EFB3B /* ProfileView.swift in Sources */,
 				091D4FAC2C3A482E00FEF9DA /* extensions.swift in Sources */,
 				095117AA2C3774E8001EFB3B /* LoginView.swift in Sources */,
@@ -284,25 +238,19 @@
 				095117AF2C377A9B001EFB3B /* DeviceView.swift in Sources */,
 				095117D62C37945D001EFB3B /* SettingsView.swift in Sources */,
 				095117D02C379362001EFB3B /* ScanDeviceComponent.swift in Sources */,
+				09085C472C48A0C900A80D41 /* RegisterView.swift in Sources */,
 				09C16FA82C4421A0009D5C27 /* KeychainService.swift in Sources */,
 				09A5B8D92C371DE100AA1DFF /* MainView.swift in Sources */,
 				095117B12C377D5E001EFB3B /* User.swift in Sources */,
-				095117B82C377EB4001EFB3B /* ProfileViewModel.swift in Sources */,
-				095117CC2C37908D001EFB3B /* NameNewDeviceViewModel.swift in Sources */,
 				095117BC2C377F64001EFB3B /* ScanNewDeviceListView.swift in Sources */,
 				095117A62C3774AE001EFB3B /* DeviceListView.swift in Sources */,
 				095117BE2C378390001EFB3B /* NameNewDeviceView.swift in Sources */,
 				095117AD2C377A7B001EFB3B /* DeviceRowComponent.swift in Sources */,
 				095117D82C379474001EFB3B /* AboutView.swift in Sources */,
-				095117BA2C377ED3001EFB3B /* DeviceListViewModel.swift in Sources */,
 				09D5E6B02C3C45120094D4EA /* Host.swift in Sources */,
-				095117DA2C379487001EFB3B /* SettingsViewModel.swift in Sources */,
 				09A5B8D72C371DE100AA1DFF /* thermostatterApp.swift in Sources */,
 				095117B32C377D75001EFB3B /* Device.swift in Sources */,
-				095117CA2C37905D001EFB3B /* LoginViewModel.swift in Sources */,
 				09C16FA62C442191009D5C27 /* Auth.swift in Sources */,
-				09BC3D6A2C3AF762008624FB /* GlobalAuth.swift in Sources */,
-				095117DC2C379491001EFB3B /* AboutViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
