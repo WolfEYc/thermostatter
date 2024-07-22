@@ -16,7 +16,7 @@ let register_endpoint = auth_prefix + "/register"
 
 let token_url = URL(string: token_endpoint, relativeTo: host)!
 let user_info_url = URL(string: user_info_endpoint, relativeTo: host)!
-
+let register_url = URL(string: register_endpoint, relativeTo: host)!
 
 struct AuthenticateRes: Codable {
     let access_token: String
@@ -25,6 +25,10 @@ struct AuthenticateRes: Codable {
 
 let authenticate_request_headers = [
     "Content-Type": "application/x-www-form-urlencoded"
+]
+
+let json_content_type_header = [
+    "Content-Type": "application/json"
 ]
 
 func authenticate(username: String, password: String) async throws -> AuthenticateRes {
@@ -38,11 +42,22 @@ func authenticate(username: String, password: String) async throws -> Authentica
     req.allHTTPHeaderFields = authenticate_request_headers
     
     let (data, _) = try await URLSession.shared.data(for: req)
+    print(String(data: data, encoding: .utf8)!)
     
     let data_decoded = try JSONDecoder().decode(AuthenticateRes.self, from: data)
     return data_decoded
 }
 
 func register(email: String, username: String, password: String) async throws -> AuthenticateRes {
-    return AuthenticateRes(access_token: "bean", token_type: "bearer")
+    let payload_dict = ["email": email, "username": username, "password": password]
+    let payload = try JSONEncoder().encode(payload_dict)
+    var req = URLRequest(url: register_url)
+    req.httpMethod = "POST"
+    req.httpBody = payload
+    req.allHTTPHeaderFields = json_content_type_header
+    
+    let (data, _) = try await URLSession.shared.data(for: req)
+    print(String(data: data, encoding: .utf8)!)
+    let data_decoded = try JSONDecoder().decode(AuthenticateRes.self, from: data)
+    return data_decoded
 }

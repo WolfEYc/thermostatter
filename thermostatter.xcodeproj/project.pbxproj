@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0900B1E82C4DBC680064FD56 /* Bluetooth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0900B1E72C4DBC680064FD56 /* Bluetooth.swift */; };
+		0900B1EC2C4DBD350064FD56 /* NewDeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0900B1EB2C4DBD350064FD56 /* NewDeviceView.swift */; };
+		0900B1EE2C4DEF340064FD56 /* NewDeviceConnectSucessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0900B1ED2C4DEF340064FD56 /* NewDeviceConnectSucessView.swift */; };
+		0900B1F02C4DFA070064FD56 /* RequirementLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0900B1EF2C4DFA070064FD56 /* RequirementLabel.swift */; };
 		09085C472C48A0C900A80D41 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09085C462C48A0C900A80D41 /* RegisterView.swift */; };
 		091D4FAC2C3A482E00FEF9DA /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091D4FAB2C3A482E00FEF9DA /* extensions.swift */; };
 		095117A42C37732F001EFB3B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095117A32C37732F001EFB3B /* ProfileView.swift */; };
@@ -32,6 +36,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0900B1E72C4DBC680064FD56 /* Bluetooth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bluetooth.swift; sourceTree = "<group>"; };
+		0900B1EB2C4DBD350064FD56 /* NewDeviceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDeviceView.swift; sourceTree = "<group>"; };
+		0900B1ED2C4DEF340064FD56 /* NewDeviceConnectSucessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDeviceConnectSucessView.swift; sourceTree = "<group>"; };
+		0900B1EF2C4DFA070064FD56 /* RequirementLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequirementLabel.swift; sourceTree = "<group>"; };
 		09085C462C48A0C900A80D41 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		091D4FA72C3A21F000FEF9DA /* thermostatter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = thermostatter.entitlements; sourceTree = "<group>"; };
 		091D4FA82C3A247600FEF9DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -84,6 +92,9 @@
 				095117D52C37945D001EFB3B /* SettingsView.swift */,
 				095117D72C379474001EFB3B /* AboutView.swift */,
 				09085C462C48A0C900A80D41 /* RegisterView.swift */,
+				0900B1EB2C4DBD350064FD56 /* NewDeviceView.swift */,
+				0900B1ED2C4DEF340064FD56 /* NewDeviceConnectSucessView.swift */,
+				0900B1EF2C4DFA070064FD56 /* RequirementLabel.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -135,6 +146,7 @@
 				095117A22C3772D4001EFB3B /* models */,
 				09A5B8DC2C371DE200AA1DFF /* Assets.xcassets */,
 				09A5B8DE2C371DE200AA1DFF /* Preview Content */,
+				0900B1E72C4DBC680064FD56 /* Bluetooth.swift */,
 			);
 			path = thermostatter;
 			sourceTree = "<group>";
@@ -230,16 +242,20 @@
 				095117A42C37732F001EFB3B /* ProfileView.swift in Sources */,
 				091D4FAC2C3A482E00FEF9DA /* extensions.swift in Sources */,
 				095117AA2C3774E8001EFB3B /* LoginView.swift in Sources */,
+				0900B1EE2C4DEF340064FD56 /* NewDeviceConnectSucessView.swift in Sources */,
 				095117C22C378FC9001EFB3B /* ConnectDeviceWifiView.swift in Sources */,
 				095117AF2C377A9B001EFB3B /* DeviceView.swift in Sources */,
+				0900B1EC2C4DBD350064FD56 /* NewDeviceView.swift in Sources */,
 				095117D62C37945D001EFB3B /* SettingsView.swift in Sources */,
 				095117D02C379362001EFB3B /* ScanDeviceComponent.swift in Sources */,
 				09085C472C48A0C900A80D41 /* RegisterView.swift in Sources */,
+				0900B1F02C4DFA070064FD56 /* RequirementLabel.swift in Sources */,
 				09C16FA82C4421A0009D5C27 /* KeychainService.swift in Sources */,
 				09A5B8D92C371DE100AA1DFF /* MainView.swift in Sources */,
 				095117B12C377D5E001EFB3B /* User.swift in Sources */,
 				095117BC2C377F64001EFB3B /* ScanNewDeviceListView.swift in Sources */,
 				095117A62C3774AE001EFB3B /* DeviceListView.swift in Sources */,
+				0900B1E82C4DBC680064FD56 /* Bluetooth.swift in Sources */,
 				095117BE2C378390001EFB3B /* NameNewDeviceView.swift in Sources */,
 				095117AD2C377A7B001EFB3B /* DeviceRowComponent.swift in Sources */,
 				095117D82C379474001EFB3B /* AboutView.swift in Sources */,
@@ -387,7 +403,8 @@
 				INFOPLIST_FILE = thermostatter/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Thermostatter;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
-				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "To connect to thermostat";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "To connect to new devices";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "To connect to new devices";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -420,7 +437,8 @@
 				INFOPLIST_FILE = thermostatter/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Thermostatter;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
-				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "To connect to thermostat";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "To connect to new devices";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "To connect to new devices";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

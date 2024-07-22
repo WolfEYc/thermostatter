@@ -12,9 +12,20 @@ struct DeviceListView: View {
 
     var body: some View {
         NavigationView {
-            VStack{
-                Text(user.username)
-                Text(user.access_token)
+            ZStack {
+                VStack{
+                    HStack{
+                        Spacer()
+                        NavigationLink("+ New Device") {
+                            NewDeviceView()
+                        }
+                    }.padding(25)
+                    Spacer()
+                }
+                VStack {
+                    Text(user.username)
+                    Text(user.access_token)
+                }
             }
         }
     }

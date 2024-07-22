@@ -7,26 +7,7 @@
 
 import SwiftUI
 
-struct RequirementLabel: View {
-    let text: String
-    let checked: Bool
-    
-    var body: some View {
-        Label(
-            title: {
-                Text(text)
-                    .font(.callout)
-            },
-            icon: {
-                Image(systemName: "checkmark")
-                    .imageScale(.medium)
-            }
-        )
-        .foregroundStyle(checked ? Color.green : Color.gray)
-        .transition(.opacity)
-        .animation(.linear, value: checked)
-    }
-}
+
 
 struct RegisterView: View {
     @State private var email = ""
@@ -39,17 +20,25 @@ struct RegisterView: View {
     @State private var is_email_valid = false
     @State private var is_password_valid = false
     
+    @State var error_message = ""
+    
     private func is_form_valid() -> Bool {
         return is_username_valid && is_email_valid && is_password_valid
     }
     
     private func handleSubmit() {
+        if !is_form_valid() {
+            error_message = "Form requirements not met"
+            show_alert = true
+            return
+        }
+        let submitted_username = username
         Task {
-            let submitted_username = username
             do {
-                let res = try await authenticate(username: submitted_username, password: password)
+                let res = try await register(email: email, username: submitted_username, password: password)
                 user = User(username: submitted_username, access_token: res.access_token)
             } catch {
+                error_message = "Registration Failed"
                 show_alert = true
             }
         }
@@ -90,8 +79,8 @@ struct RegisterView: View {
                 }
             }.scrollDisabled(true)
         }
-        .alert(isPresented: $show_alert) {
-            Alert(title: Text("Login Failed"), dismissButton: .default(Text("OK")))
+        .alert("Registration Failed", isPresented: $show_alert) {
+            Text("OK")
         }
     }
 }
